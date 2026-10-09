@@ -36,7 +36,7 @@ droid_lkm_compat-y := $(DLC_COMPAT_OBJS) $(DEPS_OBJS_ALL)
 #   cgroup pids and device effect, devtmpfs, optional link types
 # droid_lkm_misc.o is not built yet, it is unfinished; re-enable it with the
 # line below once its sources are ready
-# obj-$(DLKM_OPT) += droid_lkm_misc.o
+obj-$(DLKM_OPT) += droid_lkm_misc.o
 DLM_OBJS := src/misc/misc_main.o \
 	src/misc/misc_ksym.o \
 	src/misc/misc_scope.o \
